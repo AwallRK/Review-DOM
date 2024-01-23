@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Regis section -->
+    <section id="regis-form">
+      <h1>REGISTER FORM</h1>
+      <div>
+        <div>
+          <label for="username">Username :</label>
+          <input type="text" id="username-input-regis" />
+        </div>
+        <div>
+          <label for="password">Password :</label>
+          <input type="password" id="password-input-regis" />
+        </div>
+        <button onclick="handleRegis()">Register</button>
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login-form">
+      <h1>LOGIN FORM</h1>
+      <div>
+        <div>
+          <label for="username">Username :</label>
+          <input type="text" id="username-input-login" />
+        </div>
+        <div>
+          <label for="password">Password :</label>
+          <input type="password" id="password-input-login" />
+        </div>
+
+        <button onclick="handleLogin()">login</button>
+        <button onclick="showPage('regis-form')">register</button>
+      </div>
+    </section>
+
+    <!-- main content -->
+    <section id="content-section">
+      <h1 id="greeting"></h1>
+      <button onclick="showPage('form-section')">New Digimon</button>
+      <button onclick="handleLogout()">Logout</button>
+      <div class="container"></div>
+    </section>
+
+    <!-- form section -->
+    <section id="form-section">
+      <h1>ADD NEW DIGIMON FORM</h1>
+      <div>
+        <div>
+          <label for="name">Name Digimon :</label>
+          <input type="text" id="nameDigimon-input" />
+        </div>
+        <div>
+          <label for="imgUrl">ImgUrl :</label>
+          <input type="text" id="ImgUrl-input" />
+        </div>
+        <div>
+          <label for="Level">Level :</label>
+          <input type="text" id="Level-input" />
+        </div>
+        <button onclick="handleForm()">Add New Digimon</button>
+      </div>
+    </section>
+
+    <script src="script.js" />
+  </body>
+</html>
